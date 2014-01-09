@@ -3,6 +3,6 @@ people = ['Adi', 'Adrian', 'Alex', 'Anthony', 'Ben', 'Brian', 'Bryan', 'Chloe', 
 
 # for how large of a group, and then it creates random groups. If anyone is left over, just throw them into the last group
 
-people.each_slice(2) do |x,y|
+people.each_slice(3) do |x,y,z|
   p [x,y,z]
 end
