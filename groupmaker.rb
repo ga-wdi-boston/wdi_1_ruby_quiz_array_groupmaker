@@ -5,10 +5,9 @@ print "What size groups would you like? "
 n = gets.chomp.to_i
 
 array_groups = people.each_slice(n).to_a
-large_array = [] + array_groups
 
-large_array.each.with_index do |group, index|
+array_groups.each.with_index do |group, index|
 	index += 1
-	group.join(', ')
-	puts "Group ##{index}: #{group}"
+	group_list = group.join(', ')
+	puts "Group ##{index}: #{group_list}"
 end
